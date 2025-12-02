@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanGo</title>
+    <link rel="icon" type="image/x-icon" href="Imagenes/Logo-Pan.ico"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/comandos.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Imagenes/Logo Escudo.png">
+                <i class="bi bi-cup-hot-fill"></i>
+                <span class="text-dark">PanGo</span>
+            </a>
+        <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#menu" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>    
+    
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active">Recomendados</a></li>
+                <li class="nav-item">
+                    <a class="nav-link">Favoritos</a></li>
+                <li class="nav-item">
+                    <a class="nav-link">Buscar</a></li>
+                <li class="nav-item">
+                    <a class="nav-link">Carrito</a></li>
+                <li class="nav-item">
+                    <a class="nav-link">Pedidos</a></li>
+                <li class="nav-item">
+                    <a class="nav-link">Yo</a></li>    
+            </ul>
+        </div>
+    </nav>
+
+    <h3>Más vendidos</h3>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Pan rollo.jpg" class="card-img-top" alt="Pan rollo">
+                <div class="card-body">
+                    <h4 class="card-title">Pan rollo</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Delicioso pan enrollado con ingredientes frescos.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"  > info </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Roscon.jpg" class="card-img-top" alt="Roscon">
+                <div class="card-body">
+                    <h4 class="card-title">Roscon</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Delicioso roscón con un toque especial.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Pan de bono.jpg" class="card-img-top" alt="Pan de bono" height="165">
+                <div class="card-body">
+                    <h4 class="card-title">Pan de bono</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Delicioso pan de bono con queso con exquisito sabor.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Mantecada.jpg" class="card-img-top" alt="Mantecada" height="165">
+                <div class="card-body">
+                    <h4 class="card-title">Mantecada</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Mantecada esponjosa y suave, ideal para acompañar con café.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <br>
+
+    <h3>Mejor calificacion</h3>
+        <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Pan de queso.jpg" class="card-img-top" alt="Pan de queso" height="165">
+                <div class="card-body">
+                    <h4 class="card-title">Pan de queso</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Delicioso pan de queso con ingredientes frescos.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Churros.jpg" class="card-img-top" alt="Churros" height="165">
+                <div class="card-body">
+                    <h4 class="card-title">Churros</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Deliciosos churros crujientes espolvoreados con azúcar.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Galletas de chocolate.jpg" class="card-img-top" alt="Galletas de chocolate" height="165">
+                <div class="card-body">
+                    <h4 class="card-title">Galletas de chocolate</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Deliciosas galletas con trozos de chocolate.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Mantecada.jpg" class="card-img-top" alt="Mantecada" height="165">
+                <div class="card-body">
+                    <h4 class="card-title">Mantecada</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Mantecada esponjosa y suave, ideal para acompañar con café.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+        <p><h3>Promociones</h3></p>
+            <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Pan de queso.jpg" class="card-img-top" alt="Pan de queso" height="165">
+                <div class="card-body">
+                    <h4 class="card-title">Pan de queso</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Delicioso pan de queso con ingredientes frescos.</p>
+                    <a class="btn btn-primary">Ver detalles</a> 
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Churros.jpg" class="card-img-top" alt="Churros" height="165">
+                <div class="card-body">
+                    <h4 class="card-title">Churros</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Deliciosos churros crujientes espolvoreados con azúcar.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Galletas de chocolate.jpg" class="card-img-top" alt="Galletas de chocolate" height="165">
+                <div class="card-body">
+                    <h4 class="card-title">Galletas de chocolate</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Deliciosas galletas con trozos de chocolate.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/Mantecada.jpg" class="card-img-top" alt="Mantecada" height="165">
+                <div class="card-body">
+                    <h4 class="card-title">Mantecada</h4>
+                    <h6>Precio$$$</h6>
+                    <p class="card-text">Mantecada esponjosa y suave, ideal para acompañar con café.</p>
+                    <a class="btn btn-primary">Ver detalles</a>
+                    <button class="btn btn-danger toggle-info"> info </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

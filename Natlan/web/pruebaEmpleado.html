@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Empleado</title>
+</head>
+<body>
+    <h1>Hola</h1>
+    <p>Bienvenido a la página de prueba.</p> 
+    <section aria-labelledby="features-title">
+        <h2 id="features-title">Características</h2>
+        <ul>
+            <li>Parrafo en construccion...</li>
+            <li>Parrafo en construccion...</li>
+            <li>Parrafo en construccion...</li>
+        </ul>
+    </section>
+
+    <section aria-labelledby="interact-title">
+        <h2 id="interact-title">Interactúa</h2>
+        <label for="name">Tu nombre:</label>
+        <input id="name" type="text" placeholder="Escribe tu nombre">
+        <button id="greetBtn">Saludar</button>
+        <p id="greeting" aria-live="polite"></p>
+
+        <button id="dateBtn">Mostrar fecha y hora</button>
+        <p id="fecha" aria-live="polite"></p>
+    </section>
+
+    <footer>
+        <small>Versión de prueba — contenido estático para demostración.</small>
+    </footer>
+
+    <script>
+        document.getElementById('greetBtn').addEventListener('click', function(){
+            var name = document.getElementById('name').value.trim();
+            document.getElementById('greeting').textContent = name ? 'Hola, ' + name + '!' : 'Hola!';
+        });
+        document.getElementById('dateBtn').addEventListener('click', function(){
+            document.getElementById('fecha').textContent = new Date().toLocaleString();
+        });
+    </script>
+</body>
+</html>

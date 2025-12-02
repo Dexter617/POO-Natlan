@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Crear Cuenta Nueva</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+</head>
+<body class="bg-warning">
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title text-center mb-4">Crear Cuenta Nueva</h4>
+
+          <form id="formCuenta" method="post" action="CreacionUsuarios">
+
+            <div class="mb-3">
+              <label for="primerNombre" class="form-label">Primer Nombre *</label>
+              <input type="text" class="form-control" id="PrimerNombre" name="PrimerNombre" required>
+            </div>
+              
+              <div class="mb-3">
+              <label for="primerNombre" class="form-label">Segundo Nombre *</label>
+              <input type="text" class="form-control" id="SegundoNombre" name="SegundoNombre" required>
+            </div>
+
+     
+            <div class="mb-3">
+              <label for="primerApellido" class="form-label">Primer Apellido *</label>
+              <input type="text" class="form-control" id="PrimerApellido" name="PrimerApellido" required>
+            </div>
+              
+              <div class="mb-3">
+              <label for="primerApellido" class="form-label">Segundo Apellido *</label>
+              <input type="text" class="form-control" id="SegundoApellido" name="SegundoApellido" required>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo *</label>
+              <input type="email" class="form-control" id="correo" name="correo" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="clave" class="form-label">Clave *</label>
+              <input type="password" class="form-control" id="clave" name="clave" required>
+            </div>
+
+
+            <div class="mb-4">
+              <label for="repetirClave" class="form-label">Repetir clave *</label>
+              <input type="password" class="form-control" id="repetirClave" name="repetirClave" required>
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-warning text-black">
+                Guardar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
